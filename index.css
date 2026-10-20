@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #10051F;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #10051F;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B1D63;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* KaTeX purple math adjustments */
+.katex-display {
+  margin: 1em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+.katex {
+  font-size: 1.1em;
+  color: #F3E8FF;
+}
+
+/* Subtle glow effects */
+.glow-purple {
+  box-shadow: 0 0 25px -5px rgba(124, 58, 237, 0.35);
+}
+.glow-purple-sm {
+  box-shadow: 0 0 15px -3px rgba(124, 58, 237, 0.25);
+}
+.glow-pink-sm {
+  box-shadow: 0 0 15px -3px rgba(232, 121, 249, 0.25);
+}
